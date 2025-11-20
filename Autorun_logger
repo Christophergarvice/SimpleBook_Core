@@ -1,1 +1,12 @@
+import os
+from datetime import datetime
 
+# Simulate module run
+print("Running SimpleBook core routine...")
+
+# Create or append to a log file
+log_path = os.path.join(os.getcwd(), "run_log.txt")
+with open(log_path, "a") as f:
+    f.write(f"Run executed at {datetime.now()}\n")
+
+print("Log updated. Success.")
